@@ -5,7 +5,7 @@ has reached) is consistent across the whole multi-page app.
 """
 
 import streamlit as st
-
+import os
 from utils.theme import badge
 
 STEPS = [

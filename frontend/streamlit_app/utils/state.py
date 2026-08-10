@@ -19,7 +19,7 @@ STEPS = [
 
 def init_state() -> None:
     defaults = {
-        "backend_url": "http://127.0.0.1:8000",
+        "backend_url": os.getenv("BACKEND_URL", "http://127.0.0.1:8000"),
         "resume_id": None,
         "resume_data": None,
         "jd_id": None,

@@ -1,12 +1,4 @@
-"""
-Custom CSS injected into every page to give the app a HackerRank-style
-"online assessment" look: a dark fixed top bar with a monospace countdown
-timer, green accent color and pill badges, a light content card for the
-question panel, and a question-navigator dot strip. Streamlit's own theme
-(.streamlit/config.toml) sets the base dark palette; this module layers
-the assessment-platform-specific chrome on top via a single injected
-<style> block.
-"""
+
 
 import streamlit as st
 

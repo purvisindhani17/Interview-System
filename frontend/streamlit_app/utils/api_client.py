@@ -1,11 +1,4 @@
-"""
-Thin wrapper around the FastAPI backend's 19 endpoints.
 
-Every function returns the parsed JSON response on success and raises
-APIError on failure -- whether that's an HTTP error status from the
-backend or a connection-level failure (backend unreachable, DNS error,
-timeout). Pages only ever need to catch one exception type.
-"""
 
 import requests
 import streamlit as st

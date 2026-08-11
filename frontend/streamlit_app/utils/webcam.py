@@ -1,16 +1,4 @@
-"""
-streamlit-webrtc video frame processor for continuous webcam capture.
 
-streamlit-webrtc runs frame processing in a background thread that is
-NOT the Streamlit script-execution context, so it cannot safely read or
-write st.session_state directly. Instead, everything the processor needs
-(session_id, backend URL) is passed in at construction time as plain
-attributes, and captured frames are POSTed to the backend from a
-short-lived background thread (fire-and-forget) so the video pipeline
-itself is never blocked waiting on a network call -- this keeps the live
-video feed smooth while still sampling frames for Module 6's attention
-tracking roughly every CAPTURE_INTERVAL_SECONDS.
-"""
 
 import threading
 import time

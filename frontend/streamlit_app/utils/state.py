@@ -1,8 +1,3 @@
-"""
-Central session_state initialization and the sidebar step tracker shown
-on every page, so navigation state (which pipeline stage the candidate
-has reached) is consistent across the whole multi-page app.
-"""
 
 import streamlit as st
 import os

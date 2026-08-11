@@ -84,7 +84,4 @@ if st.session_state["resume_id"]:
 st.page_link("pages/1_📄_Resume_Upload.py", label="▶ Start with your resume", icon="📄")
 
 st.markdown("---")
-st.caption(
-    "This app talks to the FastAPI backend at the URL set in the sidebar. "
-    "Make sure the backend is running (`uvicorn app.main:app --reload`) before you begin."
-)
+
